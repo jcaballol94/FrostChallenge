@@ -1,5 +1,11 @@
 {
   "dependencies": {
+    "com.jcaballol94.graphics-utils": {
+      "version": "file:com.jcaballol94.graphics-utils",
+      "depth": 0,
+      "source": "embedded",
+      "dependencies": {}
+    },
     "com.unity.burst": {
       "version": "1.6.4",
       "depth": 1,

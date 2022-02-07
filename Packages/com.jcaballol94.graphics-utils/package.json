@@ -1,0 +1,10 @@
+{
+  "name": "com.jcaballol94.graphics-utils",
+  "displayName": "Graphics Utils",
+  "version": "0.0.1",
+  "description": "A collection of tools to help in graphics stuff (shaders and VFX).",
+  "author": {
+    "name" : "Jordi Caballol",
+    "email": "jcaballol94@gmail.com"
+  }
+}
