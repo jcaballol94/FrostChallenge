@@ -6,6 +6,7 @@ namespace jCaballol.GraphicsUtils
     public class BakedMaterial : ScriptableObject
     {
         public Material material;
+        public int shaderPass = 0;
         public Vector2Int resolution = new Vector2Int(128,128);
         public TextureFormat format = TextureFormat.RGBA32;
         public TextureWrapMode wrapMode = TextureWrapMode.Repeat;
@@ -19,8 +20,9 @@ namespace jCaballol.GraphicsUtils
             RegenerateTexture();
             var rt = PrepareRenderTexture();
 
+            var pass = Mathf.Min(shaderPass, material.shader.passCount);
+            Graphics.Blit(null, rt, material, pass);
             RenderTexture.active = rt;
-            Graphics.Blit(null, rt, material);
             m_generatedTexture.ReadPixels(new Rect(0, 0, rt.width, rt.height), 0, 0);
             m_generatedTexture.Apply();
             RenderTexture.ReleaseTemporary(rt);
