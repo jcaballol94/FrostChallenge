@@ -40,10 +40,8 @@ namespace jCaballol.GraphicsUtils
                     TextureFormat.RGBA32,
                     false, true);
 
-                m_generatedTexture.name = name + "_tex";
-                m_generatedTexture.wrapMode = TextureWrapMode.Clamp;
-
 #if UNITY_EDITOR
+                m_generatedTexture.name = name + "_tex";
                 var path = UnityEditor.AssetDatabase.GetAssetPath(this);
                 if (!string.IsNullOrEmpty(path))
                 {
@@ -53,6 +51,9 @@ namespace jCaballol.GraphicsUtils
                 }
 #endif
             }
+
+            m_generatedTexture.name = name + "_tex";
+            m_generatedTexture.wrapMode = TextureWrapMode.Clamp;
         }
     }
 }
