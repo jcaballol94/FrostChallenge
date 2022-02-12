@@ -3,26 +3,32 @@
 
 SamplerState crack_linear_clamp_sampler;
 
-float2 World2UV(float3 posWS, float scale)
+float3 World2UV(float3 posWS, float scale)
 {
-    return posWS.xz / scale + float2(0.5, 0.5);
+    return posWS / scale + float3(0.5,0.5,0.5);
+}
+
+float3 UV2World(float3 posUV, float scale)
+{
+    return (posUV - float3(0.5, 0.5, 0.5)) * scale;
 }
 
 void CrackRayMarch_float(UnityTexture2D crackTex, in float3 startPos, in float3 viewDir, in float crackWidth, in float scale, 
-    out float3 crackPos, out float2 crackUV)
+    out float3 crackPos)
 {
     viewDir /= length(viewDir.xz);
-    crackPos = startPos;
+    crackWidth /= scale;
+    crackPos = World2UV(startPos, scale);
     float distToCrack = 0;
     int maxIter = 10;
     [loop]
     do
     {
         crackPos += viewDir * distToCrack;
-        crackUV = World2UV(crackPos, scale);
-        distToCrack = crackTex.Sample(crack_linear_clamp_sampler, crackUV).x * scale - crackWidth;
+        distToCrack = crackTex.Sample(crack_linear_clamp_sampler, crackPos.xz).x - crackWidth;
         --maxIter;
-    } while (distToCrack > 0.001 && maxIter);
+    } while (distToCrack > 0 && maxIter);
+    crackPos = UV2World(crackPos, scale);
 }
 
 #endif

@@ -3034,27 +3034,6 @@
 
 {
     "m_SGVersion": 0,
-    "m_Type": "UnityEditor.ShaderGraph.Vector2MaterialSlot",
-    "m_ObjectId": "61eab1dfbc2f435b872cd3c67b70b72b",
-    "m_Id": 6,
-    "m_DisplayName": "crackUV",
-    "m_SlotType": 1,
-    "m_Hidden": false,
-    "m_ShaderOutputName": "crackUV",
-    "m_StageCapability": 3,
-    "m_Value": {
-        "x": 0.0,
-        "y": 0.0
-    },
-    "m_DefaultValue": {
-        "x": 0.0,
-        "y": 0.0
-    },
-    "m_Labels": []
-}
-
-{
-    "m_SGVersion": 0,
     "m_Type": "UnityEditor.ShaderGraph.Vector1MaterialSlot",
     "m_ObjectId": "62ba2d36107a4d46af9e7d2504a934c5",
     "m_Id": 1,
@@ -6181,9 +6160,6 @@
         },
         {
             "m_Id": "6820b5aafc57489982632c784face059"
-        },
-        {
-            "m_Id": "61eab1dfbc2f435b872cd3c67b70b72b"
         }
     ],
     "synonyms": [

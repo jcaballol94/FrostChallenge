@@ -167,7 +167,7 @@ Material:
     - _ConservativeDepthOffsetEnable: 0
     - _CrackNoiseScale: 53.32
     - _CrackSoftness: 2.27
-    - _CrackWidth: 0.05
+    - _CrackWidth: 0.03
     - _CullMode: 2
     - _CullModeForward: 2
     - _Cutoff: 0.5
