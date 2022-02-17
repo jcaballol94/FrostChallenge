@@ -174,6 +174,7 @@ Material:
     - _CoatMask: 0
     - _ConservativeDepthOffsetEnable: 0
     - _CrackNoiseScale: 53.32
+    - _CrackNormalStrength: 0.0375
     - _CrackSoftness: 2.27
     - _CrackWidth: 0.03
     - _CracksBrightness: 10000
@@ -292,6 +293,7 @@ Material:
     - _IridescenceThicknessRemap: {r: 0, g: 1, b: 0, a: 0}
     - _SpecularColor: {r: 1, g: 1, b: 1, a: 1}
     - _SurfaceColor: {r: 0.844, g: 0.98587984, b: 1, a: 0.08627451}
+    - _SurfaceNoise: {r: 6.73, g: 0.7, b: 0.17, a: 2000}
     - _ThicknessRemap: {r: 0, g: 1, b: 0, a: 0}
     - _TransmittanceColor: {r: 1, g: 1, b: 1, a: 1}
     - _UVDetailsMappingMask: {r: 1, g: 0, b: 0, a: 0}
