@@ -63,6 +63,14 @@ Material:
         m_Texture: {fileID: 0}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
+    - _CracksCustomFunction_22d8871d1c9a4f58a70b946715c7aed0_Gradient_2:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _CracksMap:
+        m_Texture: {fileID: 2800000, guid: fd09f71a391233046927e2e798a726ee, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
     - _CracksSDF:
         m_Texture: {fileID: -5423856292191030360, guid: 6e196467719c0064781312e31a43f48c,
           type: 2}
@@ -168,6 +176,9 @@ Material:
     - _CrackNoiseScale: 53.32
     - _CrackSoftness: 2.27
     - _CrackWidth: 0.03
+    - _CracksBrightness: 10000
+    - _CracksDepth: 0.44
+    - _CracksParallax: 0.04
     - _CullMode: 2
     - _CullModeForward: 2
     - _Cutoff: 0.5
