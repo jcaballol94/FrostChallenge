@@ -207,7 +207,8 @@ Material:
     - _IridescenceThickness: 1
     - _LinkDetailsWithBase: 1
     - _MaterialID: 1
-    - _MaxDepth: 6.61
+    - _MaxBlur: 8
+    - _MaxDepth: 7.16
     - _Metallic: 0
     - _MetallicRemapMax: 1
     - _MetallicRemapMin: 0
@@ -222,6 +223,7 @@ Material:
     - _RayTracing: 0
     - _ReceivesSSR: 1
     - _ReceivesSSRTransparent: 0
+    - _Refraction: -0.04
     - _RefractionModel: 0
     - _RenderQueueType: 4
     - _RequireSplitLighting: 0
